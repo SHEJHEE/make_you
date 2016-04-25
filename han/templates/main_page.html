@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block page_title %}홈 화면{% endblock %}
+
+{% block header %}
+     <div class="container">
+    <h1>Make You</h1>
+     <h4>당신에 대해 아직 미숙한 사람들에게 당신을 가장 효과적이고 인상적이게 당신을 표현할 수 있는 방법</h4>
+
+    </div>
+{% endblock %}
+
+{% block body %}
+
+     <div class="container">
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        Username <input type="text">
+        Password <input type="password">
+        <input type="submit" value="로그인">
+    </form>
+
+     </div>
+{% endblock %}
